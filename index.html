@@ -47,113 +47,17 @@
                 <h4>PORTFOLIO</h4>
             </div>
         </div>
-        <!--card-1-->
+        <!--Creo container per le card-->
         <div class="container-fluid">
-            <div class="row mx-5">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mb-5 border">
-                        <img class="card-img-top img-fluid" src="img/portfolio/cabin.png" alt="Casetta">
-                        <div class="card-body pb-0">
-                            <h5 class="text-black text-center">Cabin Website</h5>
-                        </div>
-                        <div class="card-body pt-0 text-center">
-                            <button type="button" class="btn btn-info py-1 m-2 btn-lg px-1">Preview</button>
-                            <button type="button" class="btn btn-outline-info py-1 m-2 btn-lg px-1">View Site</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!--card-2-->
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mb-5 border">
-                        <img class="card-img-top img-fluid" src="img/portfolio/cake.png" alt="Torta">
-                        <div class="card-body pb-0">
-                            <h5 class="text-black text-center">Cake Website</h5>
-                        </div>
-                        <div class="card-body pt-0 text-center">
-                            <button type="button" class="btn btn-info py-1 m-2 btn-lg px-1">Preview</button>
-                            <button type="button" class="btn btn-outline-info py-1 m-2 btn-lg px-1">View Site</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--card-3-->
-
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mb-5 border">
-                        <img class="card-img-top img-fluid" src="img/portfolio/circus.png" alt="Circo">
-                        <div class="card-body pb-0">
-                            <h5 class="text-black text-center">Circus Website</h5>
-                        </div>
-                        <div class="card-body pt-0 text-center">
-                            <button type="button" class="btn btn-info py-1 m-2 btn-lg px-1">Preview</button>
-                            <button type="button" class="btn btn-outline-info py-1 m-2 btn-lg px-1">View Site</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--card-4-->
-
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mb-5 border">
-                        <img class="card-img-top img-fluid" src="img/portfolio/game.png" alt="Gaming">
-                        <div class="card-body pb-0">
-                            <h5 class="text-black text-center">Game Website</h5>
-                        </div>
-                        <div class="card-body pt-0 text-center">
-                            <button type="button" class="btn btn-info py-1 m-2 btn-lg px-1">Preview</button>
-                            <button type="button" class="btn btn-outline-info py-1 m-2 btn-lg px-1">View Site</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--card-5-->
-
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mb-5 border">
-                        <img class="card-img-top img-fluid" src="img/portfolio/safe.png" alt="Cassaforte">
-                        <div class="card-body pb-0">
-                            <h5 class="text-black text-center">Safe Website</h5>
-                        </div>
-                        <div class="card-body pt-0 text-center">
-                            <button type="button" class="btn btn-info py-1 m-2 btn-lg px-1">Preview</button>
-                            <button type="button" class="btn btn-outline-info py-1 m-2 btn-lg px-1">View Site</button>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--card-6-->
-
-
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card mb-5 border">
-                        <img class="card-img-top img-fluid" src="img/portfolio/submarine.png" alt="Sottomarino">
-                        <div class="card-body pb-0">
-                            <h5 class="text-black text-center">Submarine Website</h5>
-                        </div>
-                        <div class="card-body pt-0 text-center">
-                            <button type="button" class="btn btn-info py-1 m-2 btn-lg px-1">Preview</button>
-                            <button type="button" class="btn btn-outline-info py-1 m-2 btn-lg px-1">View Site</button>
-                        </div>
-                    </div>
-                </div>
+            <div id="rowcarte" class="row mx-5">
+                
             </div>   
         </div>    
     </main>
 
     <footer class="bg-info">
         <div class="text-center py-4 fw-bold fs-3 text-dark">WANT AN OFFER?</div>
-        <form class="row mx-5 g-3">
+        <form class="row mx-5 g-3" onsubmit="submitForm(event)">
             <div class="col-md-6">
                 <label for="input" class="form-label">First Name</label>
                 <input type="text" class="form-control" id="InputName">
@@ -172,16 +76,16 @@
             </div>
             <div class="col-md-6">
                 <label for="text" class="form-label">Type of work</label>
-                <select class="form-select">
+                <select id="sceltaLavoro"class="form-select">
                     <option selected>Open this select menu</option>
-                    <option value="1">Front-End Development</option>
-                    <option value="2">Back-End Development</option>
-                    <option value="3">Project Analisys</option>
+                    <option value="15.30">Front-End Development</option>
+                    <option value="20.50">Back-End Development</option>
+                    <option value="33.60">Project Analisys</option>
                 </select>
             </div>
             <div class="col-md-6">
                 <label for="input" class="form-label">Discount Code</label>
-                <input type="text" class="form-control" id="InputDiscount">
+                <input type="text" class="form-control" id="inputDiscount">
             </div>
             <div>
                 <label for="input" class="form-label">Leave your message!</label>
@@ -189,9 +93,9 @@
                     rows="5"></textarea>
             </div>
             <div class="col-12 text-center">
-                <button type="submit" class="btn btn-warning">Sign in</button>
+                <button id="bottone" type="submit" class="btn btn-warning">Submit</button>
             </div>
-            <p class="fs-4 fw-bold">Il prezzo finale e' di:153.75</p>
+            <p id="Risposta" class="fs-4 fw-bold text-center"></p>
         </form>
     </footer>
 
@@ -200,7 +104,7 @@
         <p class="mb-0 pb-4 fs-6">2215 John Daniel Drive <br> Clark, MO 65243</p>
     </div>
 
-    <script src="./js/script.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
 
 </body>
 
