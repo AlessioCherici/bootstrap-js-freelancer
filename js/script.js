@@ -84,7 +84,7 @@ function submitForm(event) {
         if (isInArray) {
             document.getElementById("inputDiscount").classList.remove("text-danger");
             let prezzoScontato = prezzoPieno - prezzoPieno * 25 / 100;
-            document.getElementById("sconto").innerHTML = "Il codice sconto ti garantisce un 25% di sconto!";
+            document.getElementById("sconto").innerHTML = "Il codice ti garantisce un 25% di sconto!";
             prezzoScontato = prezzoScontato.toFixed(2);
             document.getElementById("risposta").innerHTML = "Totale<br>" + prezzoScontato;
             arraySconti.splice(arraySconti.indexOf(sconto),1);
