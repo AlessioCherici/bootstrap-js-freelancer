@@ -72,12 +72,11 @@
             </div>
             <div class="col-md-6">
                 <label for="input" class="form-label">Hours Requested</label>
-                <input type="number" class="form-control" id="inputHours">
+                <input type="number" min="1" class="form-control" id="inputHours" required>
             </div>
             <div class="col-md-6">
-                <label for="text" class="form-label">Type of work</label>
-                <select id="sceltaLavoro"class="form-select">
-                    <option selected>Open this select menu</option>
+                <label for="text" class="form-label">Type of Work:</label>
+                <select id="sceltaLavoro" class="form-select" required>
                     <option value="15.30">Front-End Development</option>
                     <option value="20.50">Back-End Development</option>
                     <option value="33.60">Project Analisys</option>
@@ -95,7 +94,8 @@
             <div class="col-12 text-center">
                 <button id="bottone" type="submit" class="btn btn-warning">Submit</button>
             </div>
-            <p id="Risposta" class="fs-4 fw-bold text-center"></p>
+            <p id="sconto" class="fs-4 fw-bold text-center"></p>
+            <p id="risposta" class="fs-4 fw-bold text-center"></p>
         </form>
     </footer>
 
